@@ -1,0 +1,44 @@
+.pagination {
+    margin-top: 20px;
+    display: flex;  
+    text-align: center;
+    justify-content: center;
+}
+  
+.pagination button {
+    font-size: 16px;
+    font-family: Nunito, sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 2px;
+    color: #828282ac;
+}
+
+.pagination button.active {
+    color: #c9d636;
+    filter: none;
+}
+
+.prev-page{
+    width: 15px;
+    height: 24.54px;
+    top: 1809px;
+    left: 910px;
+    border: 2px;
+}
+  
+.next-page{
+    transform: rotate(180deg);
+    width: 15px;
+    height: 24.54px;
+    top: 1809px;
+    left: 910px;
+    border: 2px;
+}
+
+.prev-page,
+.next-page {
+  stroke: #828282ac;
+}
