@@ -14,11 +14,11 @@ const App = () => {
   const [loading, setLoading] = useState(false); // Indica se os dados estão sendo carregados no momento
   const [selectedCharacter, setSelectedCharacter] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
+  const [total_pages, setTotalPages] = useState(1);
 
 
   const nextPage = () => {
-    if (currentPage < totalPages) {
+    if (currentPage < total_pages) {
       setCurrentPage(currentPage + 1);
     }
   };
@@ -84,7 +84,7 @@ const App = () => {
                 <Cards key={character.id} character={character} handleCardClick={handleCardClick}/>
               ))}
             </div>
-            <Pagination currentPage={currentPage} totalPages={totalPages} onPrevPage={prevPage} onNextPage={nextPage} onPageChange={onPageChange} />
+            <Pagination currentPage={currentPage} total_pages={total_pages} onPrevPage={prevPage} onNextPage={nextPage} onPageChange={onPageChange} />
             {selectedCharacter && <Modal character={selectedCharacter} onClose={handleCloseModal} />}
           </div>
         )}
